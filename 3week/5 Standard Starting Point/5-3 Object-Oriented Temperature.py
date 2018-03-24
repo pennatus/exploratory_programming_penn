@@ -35,7 +35,7 @@ class Tmp(object):
         elif scale.lower() == 'f':
             self._celsius = (value - 32) * (5.0/9.0)
         else:
-            raise Exception("Unknown Scale; use 'c' or 'f'.")
+            raise Exception("Unknown Scale; use 'c' or 'f'.") # StandardError
 
 cool = Tmp(56, 'f')
 cool.c2()

@@ -13,4 +13,11 @@ def count_spaces2(arg):
     print(len(arg.split(' ')) - 1)
 count_spaces2(text)
 
-# def count_spaces3():
+def count_spaces3(arg):
+    num = 0
+    for a in arg:
+        if a != ' ':
+            num = num + 1
+    return len(arg) - num
+
+print(count_spaces3(text))
